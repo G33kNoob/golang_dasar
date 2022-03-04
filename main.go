@@ -1,11 +1,7 @@
 package main
 
-import (
-	"fmt"
-	"pertama/calculation"
-)
+import "basic/logic"
 
 func main() {
-	hasil := calculation.Add(3, 8)
-	fmt.Println(hasil)
+	logic.Conditional("golang is the best language")
 }
