@@ -21,7 +21,9 @@ func Arrlistdecimal() {
 	for i := 0; i < lenPrice; i++ {
 		// fmt.Println("awal", totalPrice)
 		// fmt.Println(i)
-		totalPrice = totalPrice + Price[i]
+		if Price[i] > 90 {
+			totalPrice = totalPrice + Price[i]
+		}
 		// fmt.Println("ahir", totalPrice)
 	}
 	fmt.Println("length price", lenPrice)
