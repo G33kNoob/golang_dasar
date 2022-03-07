@@ -1,12 +1,29 @@
 package calculation
 
-import "fmt"
+import (
+	"errors"
+	"fmt"
+)
 
 func Add(numberSatu int, numberDua int) int {
 	return (numberSatu + numberDua)
 }
-func Calculate(nilai1 int, nilai2 int, aritmatika string) {
-	fmt.Println(nilai1, aritmatika, nilai2)
+func Calculate(val1 int, val2 int, art string) (returnVal int, returnErr error) {
+	fmt.Println(val1, val2, art)
+	// fmt.Println("ok")
+	switch art {
+	case "+":
+		returnVal = val1 + val2
+	case "-":
+		returnVal = val1 - val2
+	case "*":
+		returnVal = val1 * val2
+	case "/":
+		returnVal = val1 / val2
+	default:
+		returnErr = errors.New("math: aritmatika salah")
+	}
+	return
 }
 func Sum(vals ...int) int {
 	sum := 0
