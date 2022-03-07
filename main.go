@@ -1,7 +1,7 @@
 package main
 
-import "basic/logic"
+import "basic/arrfun"
 
 func main() {
-	logic.Conditional("golang is the best language")
+	arrfun.Arrlistdecimal()
 }
