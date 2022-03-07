@@ -1,7 +1,12 @@
 package main
 
-import "basic/arrfun"
+import (
+	"basic/calculation"
+	"fmt"
+)
 
 func main() {
-	arrfun.Arrlistdecimal2()
+	x := []int{10, 20, 30, 4}
+	sum := calculation.Sum(x...)
+	fmt.Println(sum)
 }
