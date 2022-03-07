@@ -3,5 +3,5 @@ package main
 import "basic/arrfun"
 
 func main() {
-	arrfun.Arrlistdecimal()
+	arrfun.Arrlistdecimal2()
 }

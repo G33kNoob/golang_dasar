@@ -33,3 +33,21 @@ func Arrlistdecimal() {
 	fmt.Println(ratarata)
 
 }
+func Arrlistdecimal2() {
+	Prices := [...]int{100, 80, 90, 35, 95, 10, 28, 900, 87, 12, 101, 28}
+	var totalPrice int
+	var lenPrice int
+	for _, price := range Prices {
+		fmt.Println(lenPrice)
+		if price > 90 {
+			totalPrice = totalPrice + price
+			lenPrice = lenPrice + 1
+		}
+	}
+	ratarata := float64(totalPrice) / float64(lenPrice)
+	fmt.Println("length price", lenPrice)
+	fmt.Println("total price", totalPrice)
+	fmt.Printf("rata-rata = %.2f\n", ratarata)
+	fmt.Println(ratarata)
+
+}
